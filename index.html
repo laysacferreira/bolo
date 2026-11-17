@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto: Um bolo para mim 🎂</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #fff8f3;
+    color: #68463f;
+    text-align: center;
+}
+
+header {
+    padding: 75px 20px 55px;
+    background: #f5d9d3;
+}
+
+.tag {
+    background: #fff7f3;
+    display: inline-block;
+    padding: 9px 17px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a76d65;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 7vw, 65px);
+    margin: 25px 0 15px;
+    color: #814d48;
+}
+
+header p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.cake {
+    font-size: 95px;
+    margin-top: 25px;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    50% { transform: translateY(-12px); }
+}
+
+section {
+    padding: 55px 20px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #814d48;
+}
+
+.intro {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 950px;
+    margin: 35px auto;
+}
+
+.card {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 20px;
+    width: 220px;
+    box-shadow: 0 5px 20px #eacbc455;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card span {
+    font-size: 38px;
+}
+
+.card h3 {
+    margin: 13px 0 8px;
+    color: #925b55;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.proposta {
+    background: #f5e2dc;
+}
+
+.box {
+    background: white;
+    max-width: 570px;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 22px;
+    line-height: 2;
+}
+
+.box strong {
+    color: #a35e59;
+}
+
+.votacao {
+    background: #fff3ed;
+}
+
+button {
+    border: none;
+    padding: 16px 27px;
+    border-radius: 35px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+    transition: .2s;
+}
+
+.sim {
+    background: #a75e60;
+    color: white;
+}
+
+.sim:hover {
+    transform: scale(1.07);
+    background: #87474a;
+}
+
+.pensar {
+    background: #f0d9d2;
+    color: #814d48;
+}
+
+#resultado {
+    margin: 25px auto;
+    max-width: 500px;
+    line-height: 1.8;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer {
+    padding: 30px;
+    background: #f5d9d3;
+    font-size: 13px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="tag">PROJETO ESPECIAL • 2026</div>
+
+    <h1>Mãe, precisamos<br>conversar...</h1>
+
+    <p>
+        Existe um assunto muito importante<br>
+        que precisa ser resolvido na nossa família.
+    </p>
+
+    <div class="cake">🎂</div>
+    <p><strong>Uma pequena solicitação: um bolo.</strong></p>
+</header>
+
+<section>
+    <h2>Apresentando o problema</h2>
+
+    <p class="intro">
+        Após uma análise cuidadosa da situação, chegamos à conclusão
+        de que a nossa casa está precisando urgentemente de um bolo.
+        Não estamos falando de qualquer bolo, mas daquele feito com
+        amor pelas mãos da melhor confeiteira da família: você, mãe!
+    </p>
+</section>
+
+<section>
+    <h2>Por que você deveria aceitar?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <span>🥹</span>
+            <h3>Felicidade</h3>
+            <p>Um bolo seria capaz de melhorar significativamente a felicidade da sua filha.</p>
+        </div>
+
+        <div class="card">
+            <span>❤️</span>
+            <h3>Amor de mãe</h3>
+            <p>Não existe bolo comprado que tenha o mesmo gostinho de um bolo feito por você.</p>
+        </div>
+
+        <div class="card">
+            <span>☕</span>
+            <h3>Café da tarde</h3>
+            <p>Imagine um bolinho acompanhado de um café. É praticamente um investimento na felicidade familiar.</p>
+        </div>
+
+        <div class="card">
+            <span>✨</span>
+            <h3>Reconhecimento</h3>
+            <p>Você será oficialmente reconhecida como a melhor mãe e confeiteira do mundo.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="proposta">
+    <h2>Minha proposta oficial</h2>
+
+    <div class="box">
+        <p>Eu, sua filha, venho respeitosamente solicitar:</p>
+
+        <h2>UM BOLO! 🍰</h2>
+
+        <p>
+            <strong>Condições:</strong><br>
+            • Prometo agradecer muito.<br>
+            • Prometo valorizar cada pedacinho.<br>
+            • Prometo não reclamar do formato.<br>
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Considerações finais</h2>
+
+    <p class="intro">
+        Mãe, eu sei que você tem muitas coisas para fazer,
+        mas saiba que um bolo feito por você seria um dos
+        melhores acontecimentos da minha semana.
+        Pense com carinho nessa proposta. 🥺
+    </p>
+</section>
+
+<section class="votacao">
+    <h2>Agora precisamos de uma decisão!</h2>
+
+    <p>O futuro desse bolo está nas suas mãos.</p>
+
+    <br>
+
+    <button class="sim" onclick="aceitou()">
+        SIM, VOU FAZER O BOLO! ❤️
+    </button>
+
+    <button class="pensar" onclick="pensar()">
+        Vou pensar...
+    </button>
+
+    <div id="resultado"></div>
+</section>
+
+<footer>
+    Feito com muito amor, carinho e vontade de comer bolo. ❤️<br>
+    Departamento de Pedidos Especiais da Filha.
+</footer>
+
+<script>
+
+function aceitou() {
+    document.getElementById("resultado").innerHTML =
+    "EEEEEEEE! 🎉🎂❤️ A MELHOR MÃE DO MUNDO! A família agradece essa decisão histórica. O bolo entrará para a história!";
+    
+    document.body.style.background = "#fff0e9";
+}
+
+function pensar() {
+    document.getElementById("resultado").innerHTML =
+    "Tudo bem, mãe! 🥺 Mas saiba que sua filha continuará aguardando ansiosamente esse bolo. Uma hora você cede! ❤️";
+}
+
+</script>
+
+</body>
+</html>
